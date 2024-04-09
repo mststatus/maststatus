@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200&display=swap')   ;
+*{
+    padding : 0px;
+    margin : 0px;
+}
+img{
+    height: 30px;
+}
+.mainContainer{
+    height: 100vh;
+}
+.rightMarquee , .leftMarquee{
+    width: 5%;
+    height: 100%;    
+}
+
+.qoteMsg{
+    font-family: "Lobster", sans-serif;
+    font-size: 400px;
+}
+.bannerSection{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+marquee{    
+    height: 100%;
+}
+
+.stars1{
+    position: absolute;
+    top: -30px;
+    right: 20px;
+}
+.stars2{
+    position: absolute;
+    top: 50px;
+    left: 20px;   
+}
+.mainBannerSection{
+    width: 470px;
+    height: 100%;
+    /* box-shadow: 10px 9px 60px black; */
+}
+
+
+.userInputSection{
+    position: absolute;
+    top: 90%;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: radial-gradient(    
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+.inputDiv input{
+    padding : 15px;
+}
+.buttonDiv{
+    position: relative;
+    /* animation: buttonAnimation 2s infinite; */
+    tranistion: 3s linear .1s;
+}
+.buttonDiv button{
+    padding: 15px;
+}
+.inputDiv{
+    position: relative;
+    /* animation: buttonAnimation 2s infinite; */
+    tranistion: 3s linear .1s;
+}
+
+.MainWish{
+    background: -webkit-linear-gradient(#1bff02, #0051ff);
+    -webkit-background-clip: text;    
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke: 3px;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes buttonAnimation {
+    0%{
+        /* position: relative; */
+        
+        tranistion: 3s linear .1s;
+    }
+    100%{
+        right: 50px;
+        /* position: relative; */
+    }
+}
+.wishingYou{
+    background-image: url('../assets/starback.jpeg');
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes animateGate1 {
+    from{
+        left: 0px;
+    }
+    to{
+        left: -600px;
+    }
+}
+/* tranistion: 3s ease all; */
+
+.gate{
+    display: flex;
+    /* border: 5px solid rgb(255, 0, 0); */
+    /* justify-content: center; */
+    tranistion: 3s ease all;
+    /* align-items: center; */
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    /* tranistion: 3s ease all; */
+}
+
+@keyframes animateGate2 {
+    from{
+        left: 0px;
+    }
+    to{
+        left: 600px;
+    }
+}
+
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+  }
+
+  input[type=text]{
+    background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+    color : white;
+  }
+  ::placeholder{
+    color: white !important;
+    font-size: 20px;;
+  }
+
+
+  .buttonStyle{
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .buttonStyle:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  .timing{
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+  }
+  .imgDiv1{
+    /* animation-name: animateGate1; */
+    animation-duration: 2s;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: 2s all;
+    /* background-color: red; */
+  }
+  .imgDiv2{
+    /* animation-name: animateGate2; */
+    animation-duration: 2s;
+    transition: 2s all;
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+
+
+    
+ #loading {
+		-webkit-animation: rotation-star 10s infinite linear;
+		animation: rotation-star 10s infinite linear;
+}
+@-webkit-keyframes rotation-star {
+		from {
+				-webkit-transform: rotate(0deg);
+				 transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+				 transform: rotate(359deg);
+		}
+}
